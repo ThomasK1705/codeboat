@@ -4,25 +4,25 @@
 
     var buchstaben = /[A-Za-z]/;
 
-    if(!buchstaben.test(document.formular.autor.value)) {
+    if(!buchstaben.test(document.getElementsByName("autor")[0].value)) {
       alert("Einige Eingaben sind fehlerhaft. Bitte überprüfen Sie ihre Eingaben");
-      document.formular.autor.focus();
-      document.formular.autor.style.borderColor = "red";
+      document.getElementsByName("autor")[0].focus();
+      document.getElementsByName("autor")[0].style.borderColor = "red";
       return false;
     }
 
 
-    if(!buchstaben.test(document.formular.vorname.value)) {
+    if(!buchstaben.test(document.getElementsByName("vorname")[0].value)) {
       alert("Einige Eingaben sind fehlerhaft. Bitte überprüfen Sie ihre Eingaben");
-      document.formular.vorname.focus();
-      document.formular.vorname.style.borderColor = "red";
+      document.getElementsByName("vorname")[0].focus();
+      document.getElementsByName("vorname")[0].style.borderColor = "red";
       return false;
     }
 
-    if(!buchstaben.test(document.formular.name.value)) {
+    if(!buchstaben.test(document.getElementsByName("name")[0].value)) {
       alert("Einige Eingaben sind fehlerhaft. Bitte überprüfen Sie ihre Eingaben");
-      document.formular.name.focus();
-      document.formular.name.style.borderColor = "red";
+      document.getElementsByName("name")[0].focus();
+      document.getElementsByName("name")[0].style.borderColor = "red";
       return false;
     }
 
@@ -32,10 +32,10 @@
 
     var isbnVal = /^[0-9]{13}$/;
 
-    if(!isbnVal.test(document.formular.isbn.value)) {
+    if(!isbnVal.test(document.getElementsByName("isbn")[0].value)) {
       alert("Einige Eingaben sind fehlerhaft. Bitte überprüfen Sie ihre Eingaben");
-      document.formular.isbn.focus();
-      document.formular.isbn.style.borderColor = "red";
+      document.getElementsByName("isbn")[0].focus();
+      document.getElementsByName("isbn")[0].style.borderColor = "red";
       return false;
     }
 
@@ -43,20 +43,20 @@
     var jahrVal = /^[0-9]{4}$/;
     var maxJahr = 2015;
 
-   if(!jahrVal.test(document.formular.jahr.value) || document.formular.jahr.value > maxJahr) {
+   if(!jahrVal.test(document.getElementsByName("jahr")[0].value) || document.getElementsByName("jahr")[0].value > maxJahr) {
        alert("Einige Eingaben sind fehlerhaft. Bitte überprüfen Sie ihre Eingaben");
-       document.formular.jahr.focus();
-       document.formular.jahr.style.borderColor = "red";
+       document.getElementsByName("jahr")[0].focus();
+       document.getElementsByName("jahr")[0].style.borderColor = "red";
        return false;
     }
 
 
     var auflageVal = /^[0-9]/;
 
-     if(!auflageVal.test(document.formular.auflage.value)) {
+     if(!auflageVal.test(document.getElementsByName("auflage")[0].value)) {
       alert("Einige Eingaben sind fehlerhaft. Bitte überprüfen Sie ihre Eingaben");
-      document.formular.auflage.focus();
-      document.formular.auflage.style.borderColor = "red";
+      document.getElementsByName("auflage")[0].focus();
+      document.getElementsByName("auflage")[0].style.borderColor = "red";
       return false;
     }
 

@@ -12,12 +12,12 @@
 		<h1>Buch anlegen</h1>
 	<form action="http://martinakraus.net/createBookEntry.php" method="get" onsubmit="return checkEntries();">
 		<div class="links">
-			<p>Buchtitel <input class="textbox" type="text" name="titel" pattern="([0-9A-Za-zäüöß+-.,!@#$%^&*();\\/|<>'])"></p>
-			<p>Buchautor <input class="textbox" type="text" name="autor" pattern="([A-Za-zäüöß])"></p>
-			<p>ISBN <input class="textbox" type="number" maxlength="13" name="isbn" pattern="([0-9])"></p>
+			<p>Buchtitel <input class="textbox" type="text" name="titel"></p>
+			<p>Buchautor <input class="textbox" type="text" name="autor"></p>
+			<p>ISBN <input class="textbox" type="number" maxlength="13" name="isbn"></p>
 			<p>Kapitel <input class="textbox" type="number" min="0" name="kapitel"></p>
-			<p>Erscheinungsjahr <input class="textbox" type="number" name="jahr" pattern="[1-9]\d{3,}"></p>
-			<p>Auflage <input class="textbox" type="number"  min="0" name="auflage" pattern="[1-9]+[0-9]*"></p>
+			<p>Erscheinungsjahr <input class="textbox" type="number" name="jahr"></p>
+			<p>Auflage <input class="textbox" type="number"  min="0" name="auflage"></p>
 			<p>Art des Buches
 				<select name="art">
 					<option value="eBook">eBook</option>
@@ -31,8 +31,8 @@
 		</div>	
 			
 		<div class="rechts">
-			<p>Mein Vorname <input class="textbox" type="text" name="vorname" pattern="([A-Za-zäüöß])"></p>
-			<p>Mein Nachname <input class="textbox" type="text" name="name" pattern="([A-Za-zäüöß])"></p>
+			<p>Mein Vorname <input class="textbox" type="text" name="vorname"></p>
+			<p>Mein Nachname <input class="textbox" type="text" name="name"></p>
 			<p>Mein Favorit <input class="favorit" type="checkbox" name="filmfavorit"></p>
 		</div>
 		<div class ="checkbox">
