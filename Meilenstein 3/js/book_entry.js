@@ -43,7 +43,7 @@
     var jahrVal = /^[0-9]{4}$/;
     var maxJahr = 2015;
 
-   if(!jahrVal.test(document.getElementsByName("jahr")[0].value) || document.getElementsByName("jahr")[0].value < = maxJahr) {
+   if(!jahrVal.test(document.getElementsByName("jahr")[0].value) || document.getElementsByName("jahr")[0].value <= maxJahr) {
        alert("Einige Eingaben sind fehlerhaft. Bitte überprüfen Sie ihre Eingaben");
        document.getElementsByName("jahr")[0].focus();
        document.getElementsByName("jahr")[0].style.borderColor = "red";
